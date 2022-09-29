@@ -4,10 +4,10 @@
 #include <cstdlib>
 
 using namespace std;
-int sum(int j, vector<int>& a)
+int sum(int j, vector<int>& a) // Тут крч будет функция нахождения сумм положительных и отрицательных элементов вектора
 {
 	int summPos = 0;
-	int summNeg = 0;
+	int summNeg = 0; 
 	for (int i = 0; i < j; i++) {
 		if (a[i] > 0) {
 			summPos += a[i];
@@ -17,11 +17,11 @@ int sum(int j, vector<int>& a)
 		}
 	}
 	cout << "Sum Positive= " << summPos << "\n";
-	cout << "Sum Negative = " << summNeg << "\n";
+	cout << "Sum Negative = " << summNeg << "\n"; // асуждаю
 	return 0;
 }
 
-int main(int i)
+int main(int i) // Тут типа рандомная шняга для создания вектора
 {
 	int j = 1 + (rand() % 99);
 	vector<int>  v(j);
